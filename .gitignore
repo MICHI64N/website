@@ -1,0 +1,5 @@
+# MacOS does NOT need to interfere
+.DS_Store
+
+# Secret shhhh
+.env
