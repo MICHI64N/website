@@ -5,8 +5,8 @@
             <small>
                 <h2>Site Links</h2>
                 <nav class="footer-nav">
-                    <a href="licensing.html">Licenses</a>
-                    <a href="privacy-policy.html">Privacy Policy</a>
+                    <a href="licensing.php">Licenses</a>
+                    <a href="privacy-policy.php">Privacy Policy</a>
                 </nav>
             </small>
         </section>

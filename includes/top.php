@@ -9,7 +9,7 @@
             </g>
         </svg>
     </button>
-    <a id="logo" href="index.html">
+    <a id="logo" href="index.php">
         <svg xmlns="http://www.w3.org/2000/svg" role="img" alt="MICHI64N" viewBox="0,0 72,20">
             <title>Go to the Homepage</title>
             <text y="16" stroke="var(--text)">MICHI64N</text>

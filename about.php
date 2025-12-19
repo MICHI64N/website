@@ -21,7 +21,7 @@
             This website, created by Samantha Bales (MICHI64N), was created for multiple reasons:
             <ul>
                 <li>to express their authentic self through web development, and</li>
-                <li>to showcase their skills to potential employers in an online <a href="portfolio.html">portfolio</a>.</li>
+                <li>to showcase their skills to potential employers in an online <a href="portfolio.php">portfolio</a>.</li>
             </ul>
         </p>
     </main>
