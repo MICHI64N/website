@@ -2,7 +2,7 @@ const documentRoot = document.documentElement;
 
 // Expire Date for Cookies
 const dateObj = new Date();
-dateObj.setUTCFullYear("2026");
+dateObj.setUTCFullYear(dateObj.getFullYear() + 1);
 const expireDate = dateObj.toUTCString();
 
 /* ==== Nav Toggle ==== */
