@@ -1,27 +1,7 @@
 <?php
-    $page_title = "Privacy Policy";
-    $page_description = "The Privacy Policy for Samantha Bales (MICHI64N)'s website.";
-    $root_path = $_SERVER['DOCUMENT_ROOT'];
-?> 
-<!DOCTYPE html>
-<html lang="en" <?php
-    if (isset($_COOKIE["color-mode"])) {
-        if ($_COOKIE["color-mode"] == "dark") {
-            print 'class="dark"';
-        }
-    }?>>
-    <style>
-        .datetime {
-            text-align: center;
-            margin-top: 0;
-        }
-    </style>
-<head>
-    <?php require $root_path . "/includes/head.php"; ?>
-</head>
-<body>
-    <?php require $root_path . "/includes/top.php"; ?>
-    <main>
+    require $_SERVER['DOCUMENT_ROOT'] . "/template/webpage.php";
+    function main() {
+        ob_start(); ?>
         <h1>Privacy Policy</h1>
         <p class="datetime">Last Modified: <time datetime="2025-10-29">October 29, 2025</time></p>
         <p>This document (the "Privacy Policy") covers what data is collected by "us" (the website's representatives, also denoted by "we") and the purposes the data is used for.
@@ -39,7 +19,7 @@
                 <li>The cookie is to remember the website's color mode. After you use the color toggle icon, the cookie remembers the last setting the toggle was set to for a year.</li>
             </ul>
         </section>
-    </main>
-    <?php require $root_path . "/includes/bottom.php"; ?>
-</body>
-</html>
+        <?php return ob_get_clean();
+    }
+    webpage("Privacy Policy", "The Privacy Policy for Samantha Bales (MICHI64N)'s website.", "", main())
+?>
