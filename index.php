@@ -51,5 +51,5 @@
         </header>
         <?php return ob_get_clean();
     }
-    webpage("MICHI64N", "This is Samantha Bales (MICHI64N)'s Own Website!", style(), main())
+    webpage("MICHI64N", "Samantha Bales (MICHI64N)'s Personal Website", style(), main())
 ?>
