@@ -1,8 +1,7 @@
 <?php
     require $_SERVER['DOCUMENT_ROOT'] . "/template/webpage.php";
     function style() { 
-        ob_start(); ?>
-        <style>
+        ob_start(); ?><style>
             html {
                 text-align: center;
             }
@@ -14,12 +13,18 @@
                 p, a {
                     margin: 0;
                 }
+                small {
+                    display: block;
+                }
+                time {
+                    font-weight: bold;
+                    font-style: italic;
+                }
             }
             main h2 {
                 margin-bottom: 0.25em;
             }
-        </style>
-        <?php return ob_get_clean();
+        </style><?php return ob_get_clean();
     }
     function main() {
         ob_start(); ?>
@@ -29,18 +34,25 @@
                 <h2>Software Projects</h2>
                 <section class="entry">
                     <h3>This Website</h3>
-                    <small>Started 2025/10/29</small>
+                    <small>Started <time datetime="2025-10-29">2025/10/29</time></small>
                     <p>Samantha Bales (MICHI64N)'s Personal Website</p>
                     <a href="https://github.com/MICHI64N/website">
                         https://github.com/MICHI64N/website</a>
                 </section>
                 <section class="entry">
                     <h3>Listing Tracker</h3>
-                    <small>Started 2025/08/03</small>
-                    <small>Archived 2026/01/02</small>
+                    <small>Started <time datetime="2025-08-03">2025/08/03</time></small>
+                    <small>Archived <time datetime="2026-01-02">2026/01/02</time></small>
                     <p>Monitor E-Commerce Webpages/Listings</p>
                     <a href="https://github.com/MICHI64N/listing_tracker">
                         https://github.com/MICHI64N/listing_tracker</a>
+                </section>
+                <section class="entry">
+                    <h3>SQLiTables</h3>
+                    <small>Started <time datetime="2026-02-17">2026/02/17</time></small>
+                    <p>Create and maintain SQLite databases more efficiently using object-oriented concepts</p>
+                    <a href="https://github.com/MICHI64N/sqlitables">
+                        https://github.com/MICHI64N/sqlitables</a>
                 </section>
             </article>
         </main>
