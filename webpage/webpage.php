@@ -4,7 +4,7 @@ function webpage($title, $description, $head_ex, $main) {
     function nav() {
         ob_start(); ?>
         <a href="portfolio.php">Portfolio</a>
-        <a href="privacy-policy.php">Privacy Policy</a>
+        <a href="privacy.php">Privacy Policy</a>
         <a href="licensing.php">Licenses</a>
         <?php return ob_get_clean();
     } ?>
@@ -86,7 +86,7 @@ function webpage($title, $description, $head_ex, $main) {
                         <h2>Site Links</h2>
                         <nav class="footer-nav">
                             <a href="licensing.php">Licenses</a>
-                            <a href="privacy-policy.php">Privacy Policy</a>
+                            <a href="privacy.php">Privacy Policy</a>
                         </nav>
                     </small>
                 </section>

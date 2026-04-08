@@ -1,5 +1,5 @@
 <?php
-    require $_SERVER['DOCUMENT_ROOT'] . "/template/webpage.php";
+    require $_SERVER['DOCUMENT_ROOT'] . "/webpage/webpage.php";
     function style() { 
         ob_start(); ?>
         <style>

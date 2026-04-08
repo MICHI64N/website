@@ -1,5 +1,5 @@
 <?php
-    require $_SERVER['DOCUMENT_ROOT'] . "/template/webpage.php";
+    require $_SERVER['DOCUMENT_ROOT'] . "/webpage/webpage.php";
     function main() {
         ob_start(); ?>
         <h1>Privacy Policy</h1>
