@@ -3,8 +3,14 @@
     function style() { 
         ob_start(); ?>
         <style>
+            * {
+                margin: 0;
+            }
             main {
-                text-align: center;
+                h2 {
+                    text-align: center;
+                    margin-top: 1rem;
+                }
             }
             #intro {
                 display: grid;
@@ -13,13 +19,11 @@
                 max-width: fit-content;
                 padding: min(2vw, 16px);
                 margin: 0 auto;
+                text-align: center;
                 background-color: var(--background-secondary);
                 h1 {
                     font-size: min(5vw, 2rem);
                     word-wrap: break-word;
-                }
-                p {
-                    margin: 0;
                 }
                 img {
                     justify-self: center;
@@ -49,6 +53,10 @@
             </hgroup>
             <img src="images/NicoYazawa.BiBiPlushMascot.jpg" alt="">
         </header>
+        <p style="margin-top: 8px;">
+            I created this website to express my authentic self through web development
+                and to showcase my skills to potential employers in an online <a href="portfolio.php">portfolio</a>!
+        </p>
         <?php return ob_get_clean();
     }
     webpage("MICHI64N", "Samantha Bales (MICHI64N)'s Personal Website", style(), main())
