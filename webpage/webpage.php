@@ -5,7 +5,7 @@ function webpage($title, $description, $head_ex, $main) {
         ob_start(); ?>
         <a href="portfolio.php">Portfolio</a>
         <a href="privacy.php">Privacy Policy</a>
-        <a href="licensing.php">Licenses</a>
+        <a href="licensing.php">Licensing</a>
         <?php return ob_get_clean();
     } ?>
     <!-- Document -->
@@ -85,7 +85,7 @@ function webpage($title, $description, $head_ex, $main) {
                     <small>
                         <h2>Site Links</h2>
                         <nav class="footer-nav">
-                            <a href="licensing.php">Licenses</a>
+                            <a href="licensing.php">Licensing</a>
                             <a href="privacy.php">Privacy Policy</a>
                         </nav>
                     </small>

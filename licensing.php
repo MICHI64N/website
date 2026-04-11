@@ -15,7 +15,7 @@ function style() {
 }
 function main() {
     ob_start(); ?>
-    <h1>MICHI64N Website Licenses</h1>
+    <h1>MICHI64N Website Licensing</h1>
     <?php require $_SERVER['DOCUMENT_ROOT'] . "/LICENSE.md";
     return ob_get_clean();
 }
