@@ -1,63 +1,63 @@
 <?php
-    require $_SERVER['DOCUMENT_ROOT'] . "/webpage/webpage.php";
-    function style() { 
-        ob_start(); ?>
-        <style>
-            * {
-                margin: 0;
-            }
-            main {
-                h2 {
-                    text-align: center;
-                    margin-top: 1rem;
-                }
-            }
-            #intro {
-                display: grid;
-                gap: min(2vw, 16px);
-                font-weight: bold;
-                max-width: fit-content;
-                padding: min(2vw, 16px);
-                margin: 0 auto;
+require $_SERVER['DOCUMENT_ROOT'] . "/webpage/webpage.php";
+function style() { 
+    ob_start(); ?>
+    <style>
+        * {
+            margin: 0;
+        }
+        main {
+            h2 {
                 text-align: center;
-                background-color: var(--background-secondary);
-                h1 {
-                    font-size: min(5vw, 2rem);
-                    word-wrap: break-word;
-                }
-                img {
-                    justify-self: center;
-                    width: min(33vw, 6rem);
-                    height: min(33vw, 6rem);
-                    border-radius: 50%;
-                    border: min(0.25rem, 4px) solid var(--border);
-                    box-sizing: border-box;
-                }
+                margin-top: 1rem;
             }
-            @media screen and (min-width: 50rem) {
-                #intro {
-                    grid-template-columns: 1fr min(33vw, 6rem);
-                    align-items: center;
-                }
+        }
+        #intro {
+            display: grid;
+            gap: min(2vw, 16px);
+            font-weight: bold;
+            max-width: fit-content;
+            padding: min(2vw, 16px);
+            margin: 0 auto;
+            text-align: center;
+            background-color: var(--background-secondary);
+            h1 {
+                font-size: min(5vw, 2rem);
+                word-wrap: break-word;
             }
-        </style>
-        <?php return ob_get_clean();
-    }
-    function main() {
-        ob_start(); ?>
-        <header id="intro">
-            <hgroup>
-                <p>I am</p>
-                <h1>Samantha Bales,</h1>
-                <p>an aspiring webmaster.</p>
-            </hgroup>
-            <img src="images/NicoYazawa.BiBiPlushMascot.jpg" alt="">
-        </header>
-        <p style="margin-top: 8px;">
-            I created this website to express my authentic self through web development
-                and to showcase my skills to potential employers in an online <a href="portfolio.php">portfolio</a>!
-        </p>
-        <?php return ob_get_clean();
-    }
-    webpage("MICHI64N", "Samantha Bales (MICHI64N)'s Personal Website", style(), main())
+            img {
+                justify-self: center;
+                width: min(33vw, 6rem);
+                height: min(33vw, 6rem);
+                border-radius: 50%;
+                border: min(0.25rem, 4px) solid var(--border);
+                box-sizing: border-box;
+            }
+        }
+        @media screen and (min-width: 50rem) {
+            #intro {
+                grid-template-columns: 1fr min(33vw, 6rem);
+                align-items: center;
+            }
+        }
+    </style>
+    <?php return ob_get_clean();
+}
+function main() {
+    ob_start(); ?>
+    <header id="intro">
+        <hgroup>
+            <p>I am</p>
+            <h1>Samantha Bales,</h1>
+            <p>an aspiring webmaster.</p>
+        </hgroup>
+        <img src="images/NicoYazawa.BiBiPlushMascot.jpg" alt="">
+    </header>
+    <p style="margin-top: 8px;">
+        I created this website to express my authentic self through web development
+            and to showcase my skills to potential employers in an online <a href="portfolio.php">portfolio</a>!
+    </p>
+    <?php return ob_get_clean();
+}
+webpage("MICHI64N", "Samantha Bales (MICHI64N)'s Personal Website", style(), main());
 ?>
