@@ -40,17 +40,9 @@ function main() {
                     https://github.com/MICHI64N/website</a>
             </section>
             <section class="entry">
-                <h3>Listing Tracker</h3>
-                <small>Started <time datetime="2025-08-03">2025/08/03</time></small>
-                <small>Archived <time datetime="2026-01-02">2026/01/02</time></small>
-                <p>Monitor E-Commerce Webpages/Listings</p>
-                <a href="https://github.com/MICHI64N/listing_tracker">
-                    https://github.com/MICHI64N/listing_tracker</a>
-            </section>
-            <section class="entry">
                 <h3>SQLiTables</h3>
                 <small>Started <time datetime="2026-02-17">2026/02/17</time></small>
-                <p>Create and maintain SQLite databases more efficiently using object-oriented concepts</p>
+                <p>Create and maintain SQLite databases more efficiently using object-oriented concepts.</p>
                 <a href="https://github.com/MICHI64N/sqlitables">
                     https://github.com/MICHI64N/sqlitables</a>
             </section>
